@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5rem;
+    grid-row: 2/4;
+}
+h2{
+    background-color: red;
+    border-top: solid 2px rgb(204, 0, 0);
+}
+h3{
+    font-size: 2.5rem;
+}
+.top{
+    height: 8rem;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top img{
+    background-color: red;
+    padding-left: 1rem;
+    height: 6rem; width: 7rem;
+}
+.top ul{
+    display: flex;
+    font-size: 5rem;
+
+}
+.top ul li{
+    margin-right: 1rem;
+    display: flex;
+    align-self: center;
+    width: 10rem;
+    color: white;
+    background-color: red;
+}
+li{
+    list-style: none;
+}
+
+.batch{
+    height: 38rem; width: 100%;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border-top: solid 2px rgb(204, 0, 0);
+}
+.batch-img{
+    grid-column: 1/7;
+    height: 100%;
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/20/10/27/kinkaku-ji-2328557_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+.titulo{
+    grid-column: 7/13;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    color: white;
+    text-align: center;
+}
+
+.titulo p{
+    font-size: 3.5rem;
+    grid-row: 4/6;
+}
+.oportunidades{
+    padding: 1rem 10% 3rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+h2{
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem 0px 1rem 0px;
+}
+.oportunidad{ 
+    padding: 2rem 2rem;
+    width: 42%;
+    font-size: 3rem;
+    text-align: justify;
+    background-color: white;
+    border-radius: 1rem;
+}
+.oportunidad img{
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.eventos{
+    height: 90rem;
+    padding: 1rem 5% 2.5rem;
+    color: white;
+    background-color: red;
+}
+.event{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.evento-img{
+    grid-column: 1/8;
+    /*height: 40rem;*/
+}
+.evento-img img{
+    height: 40rem;
+    border-radius: 0.3rem;
+}
+.evento-content{
+    grid-column: 8/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-align: justify;
+}
+.estudiantes{
+    padding: 1rem 6% 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+.estudiante{
+    background-color: white;
+    padding: 1rem 2% 1.5rem;
+    border-radius: 0.5rem;
+    width: 30%;
+}
+
+.estudiante img{
+    height: 30rem;
+    width: 100%;
+}
+.estudiante p{
+    font-size: 1.8rem;
+    text-align: justify;
+}
+.profesores{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4% 2rem;
+}
+.profesor{
+    padding: 1rem 1%;
+    width: 25%;
+    font-size: 3rem;
+}
+.profesor img{
+    width: 100%;
+}
+.instalaciones{
+    display: flex;
+    padding: 1rem 10% 2rem;
+}
+.direccion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 4rem;
+}
+.direccion h2{
+    background-color: white;
+    border: none;
+    margin-top: 1rem;
+}
+.direccion p{
+    margin-top: 7rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.contacto{
+    padding: 1rem 4% 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color:#EAF2FD;
+    font-size: 5rem;
+}
+
+.foto-contacto{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto-contacto img{
+    height: 100%; width: 90%;
+}
+
+.contacto-form{
+    grid-column: 3/6;
+    
+}
+
+.contacto-form h2{
+    background-color: #EAF2FD;
+    border: none;
+    text-align: left;
+}
+.contacto-form form{
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+}
+.contacto-form form label{
+    display: block;
+    color: #A2A2A2;
+    font-size: 2rem;
+}
+.contacto-form form input{
+    height: 3.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: solid #C8C8C8 0.1rem;
+    font-size: 2rem;
+}
+
+#text-box{
+    height: 10rem;
+}
+form button{
+    background-color: #2A7AE4;
+    border: none;
+    color: #ffffff;
+    height: 5rem;
+    font-size: 2rem;
+    width: 30%;
+}
+footer{
+    text-align: center;
+    font-size: 4rem;
+}
