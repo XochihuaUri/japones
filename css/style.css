@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -8,9 +9,13 @@ h1{
     font-size: 5rem;
     grid-row: 2/4;
 }
-h2{
-    background-color: red;
-    border-top: solid 2px rgb(204, 0, 0);
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(202, 202, 202);
 }
 h3{
     font-size: 2.5rem;
@@ -45,8 +50,8 @@ li{
 }
 
 .batch{
-    height: 38rem; width: 100%;
-    background-color: red;
+    height: 38.6rem; width: 100%;
+    background-color:#FF121F;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     border-top: solid 2px rgb(204, 0, 0);
@@ -71,17 +76,22 @@ li{
     font-size: 3.5rem;
     grid-row: 4/6;
 }
+.why h2{
+    background-color:#FF3D47;
+}
 .oportunidades{
     padding: 1rem 10% 3rem;
     display: flex;
     justify-content: space-between;
-    background-color: red;
+    background-color:#FF3D47;
 }
+
 
 h2{
     text-align: center;
     font-size: 4rem;
     padding: 2rem 0px 1rem 0px;
+    color: white;
 }
 .oportunidad{ 
     padding: 2rem 2rem;
@@ -97,7 +107,146 @@ h2{
     border-radius: 0.3rem;
     margin-bottom: 1.5rem;
 }
+.oportunidad p,
+.oportunidad h3{
+    background-color: #ffffff
+}
+/*
+body {
+	background: #1D1D1F;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}*/
 
+.contenedor {
+    padding: 2rem 4% 3rem;
+	width: 100%;
+	margin: auto;
+    background-color:#FF121F;
+}
+.contenedor h2{
+font-size: 4rem;
+font-weight: bold;
+color: white;
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+    font-size: 5rem;
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
+	max-width: 550px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+}
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 30px;
+	color: black;
+    text-align: justify;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 3rem;
+	height: 4rem;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: white;
+	opacity: .5;
+}
+.carousel__contenedor i{
+    border: none;
+    font-size: 4.5rem;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -40px;
+}
+
+.carousel__siguiente {
+	right: -40px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #fff;
+	opacity: .3;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+/*
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+	}
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+*/
+
+
+/*
 .eventos{
     height: 90rem;
     padding: 1rem 5% 2.5rem;
@@ -110,7 +259,7 @@ h2{
 }
 .evento-img{
     grid-column: 1/8;
-    /*height: 40rem;*/
+    /*height: 40rem;
 }
 .evento-img img{
     height: 40rem;
@@ -124,12 +273,16 @@ h2{
     align-items: center;
     font-size: 4rem;
     text-align: justify;
+}*/
+.h2-estudiantes{
+    background-color:#FF3D47;
+    color:white;
 }
 .estudiantes{
     padding: 1rem 6% 2rem;
     display: flex;
     justify-content: space-between;
-    background-color: red;
+    background-color:#FF3D47;
 }
 .estudiante{
     background-color: white;
@@ -141,25 +294,41 @@ h2{
 .estudiante img{
     height: 30rem;
     width: 100%;
+    margin-bottom: 0.4rem;
 }
 .estudiante p{
     font-size: 1.8rem;
     text-align: justify;
 }
+.estudiante h3{
+    border-top: solid 0.2px rgb(61, 61, 61);
+}
+.h2-docentes{
+    background-color: #FF121F;
+    color: white;
+}
 .profesores{
+    background-color: #FF121F;
     display: flex;
     justify-content: space-between;
     padding: 1rem 4% 2rem;
 }
 .profesor{
+    background-color: #ffffff;
     padding: 1rem 1%;
-    width: 25%;
+    width: 23%;
     font-size: 3rem;
+    border-radius: 0.5rem;
+}
+.profesor h3{
+    border-top: solid 0.2px rgb(61, 61, 61);
 }
 .profesor img{
     width: 100%;
+    margin-bottom: 0.4rem;
 }
 .instalaciones{
+    background-color: #FF3D47;
     display: flex;
     padding: 1rem 10% 2rem;
 }
@@ -171,7 +340,7 @@ h2{
     padding-left: 4rem;
 }
 .direccion h2{
-    background-color: white;
+    background-color: #FF3D47;
     border: none;
     margin-top: 1rem;
 }
@@ -186,7 +355,7 @@ h2{
     padding: 1rem 4% 2rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color:#EAF2FD;
+    background-color:#FF121F;
     font-size: 5rem;
 }
 
@@ -206,9 +375,10 @@ h2{
 }
 
 .contacto-form h2{
-    background-color: #EAF2FD;
+    background-color:#FF121F;
     border: none;
     text-align: left;
+    color: white;
 }
 .contacto-form form{
     height: 50rem;
@@ -219,7 +389,7 @@ h2{
 }
 .contacto-form form label{
     display: block;
-    color: #A2A2A2;
+    color: #e6e6e6;
     font-size: 2rem;
 }
 .contacto-form form input{
@@ -234,14 +404,15 @@ h2{
     height: 10rem;
 }
 form button{
-    background-color: #2A7AE4;
-    border: none;
-    color: #ffffff;
+    background-color: #FF8F00;
+    border: solid 2px red ;
+    color:white;
     height: 5rem;
     font-size: 2rem;
     width: 30%;
 }
 footer{
+    background-color:red;
     text-align: center;
     font-size: 4rem;
 }
